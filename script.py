@@ -86,7 +86,7 @@ mock_inst = MockInstrument(nominal=12.5)
 log = MeasurementLog()
 
 # Get 10 measurements
-for i in range(10):
+for _ in range(10):
     mock_inst_value = mock_inst.measure()
     log.add("TX_Power", mock_inst_value, "dBm")
 
